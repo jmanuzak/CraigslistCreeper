@@ -1,0 +1,26 @@
+# gmail sender config
+email:
+    host: "smtp.gmail.com"
+    port: "587"
+    user: "user@gmail.com"
+    password: "your_password"
+# Who gets these little gems
+to: "you@somewhere.net"
+# Search criteria array
+criteria:
+    # Search #1
+    -
+        id: "Software Jobs Example"
+        category: "sof" # CL categories: sof, sad, cps, cpg
+                        # The value is in the URL: http://location.craigslist.org/<this>/
+        query: "rails" # Supports CL query syntax: "[ruby | rails] -java"
+        addOne: "telecommuting" # Only for Jobs, not gigs or services
+                                # CL params: telecommuting, contract, internship, part-time
+        locations: "newyork,washingtondc" # Comma separated list of locations. 
+                                          # The value is in the URL: http://<this>.craigslist.org
+    # Search #2
+    -
+        id: "Houses for Rent Example"
+        category: "apa"
+        query: "house -apartment -apartments"
+        locations: "washingtondc"
