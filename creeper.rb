@@ -85,7 +85,8 @@ class CraigslistCreeper
 	def filter_updated(posts, job_name)
 		newest_href = nil
 		old_index = nil
-		last_href = get_most_recent_post(job_name).chomp
+		last_href = get_most_recent_post(job_name)
+		last_href.chomp unless last_href.nil?
 
 		posts.each_with_index do |href, index|
 			if index == 0
