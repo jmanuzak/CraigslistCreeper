@@ -1,0 +1,5 @@
+This script will send you email updates containing the title, link and body of CL posts.  It doesn't support pagination of search results, so you'll need to adjust the frequency it runs accordingly.
+
+By default it looks for params.yaml, but you can specify a different param file as an argument as long as it follows the same syntax in the example.
+
+The params.yaml file has example search criteria.
